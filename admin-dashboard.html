@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | AgriLink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">🛠️ Admin Dashboard</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#users">Users</a></li>
+        <li><a href="#escrow">Escrow</a></li>
+        <li><a href="#disputes">Disputes</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="admin-grid">
+    <section id="users" class="admin-card">
+      <h2>👥 User Approvals</h2>
+      <p>Pending Approvals: 6 Farmers, 2 Vets, 3 Agro-Dealers</p>
+      <button onclick="alert('View Pending Profiles')">Review & Approve</button>
+    </section>
+
+    <section id="escrow" class="admin-card">
+      <h2>💸 Escrow Transactions</h2>
+      <p>18 Active | 5 Awaiting Approval | 3 Flagged</p>
+      <button onclick="alert('View Transactions')">Manage Escrow</button>
+    </section>
+
+    <section id="disputes" class="admin-card">
+      <h2>⚖️ Dispute Center</h2>
+      <p>2 New Disputes | 1 In Review | 6 Resolved</p>
+      <button onclick="alert('Resolve Disputes')">Resolve Now</button>
+    </section>
+
+    <section id="reports" class="admin-card">
+      <h2>📊 Platform Stats</h2>
+      <ul>
+        <li>📈 1,203 Listings</li>
+        <li>📉 283 Completed Sales</li>
+        <li>👤 1,050 Users</li>
+        <li>💰 RWF 7.2M in Escrow</li>
+      </ul>
+      <button onclick="alert('View Detailed Reports')">Detailed Analytics</button>
+    </section>
+
+    <section class="admin-card">
+      <h2>📢 Broadcast Message</h2>
+      <textarea placeholder="Send updates, tips, or promos to all users..."></textarea>
+      <button>Send Broadcast</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 AgriLink Admin Console</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgriLink | Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <form class="login-form">
+      <h2>🔐 Platform Login</h2>
+      <label for="role">Select Role:</label>
+      <select id="role" name="role" required>
+        <option value="">-- Choose your role --</option>
+        <option value="farmer">🌾 Farmer</option>
+        <option value="agro-dealer">🏪 Agro-Dealer</option>
+        <option value="vet">👨‍⚕️ Veterinarian/Agronomist</option>
+        <option value="admin">🛠 Admin</option>
+      </select>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +250..." required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="farmer-register.html">Register here</a></p>
+    </form>
+  </div>
+</body>
+</html>

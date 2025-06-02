@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+a { text-decoration: none; }
+
+header.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e7d32;
+  padding: 1rem 2rem;
+  color: white;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.nav-links li select {
+  padding: 0.25rem;
+}
+.nav-links .login-btn {
+  background: white;
+  color: #2e7d32;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #e8f5e9;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cta-buttons {
+  margin-top: 2rem;
+}
+.btn-primary, .btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.btn-primary {
+  background: #2e7d32;
+  color: white;
+}
+.btn-secondary {
+  background: #a5d6a7;
+  color: #2e7d32;
+}
+
+.features {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.feature {
+  padding: 1rem;
+  background: #f1f8e9;
+  border-radius: 8px;
+}
+
+.portals {
+  background: #f9fbe7;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.portal {
+  padding: 1rem;
+  background: #aed581;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  display: block;
+}
+
+.about {
+  padding: 2rem;
+  background: #fffde7;
+  text-align: center;
+}
+
+.footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
