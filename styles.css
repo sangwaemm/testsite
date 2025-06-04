@@ -168,37 +168,42 @@ img {
   display: grid;
   gap: 2rem;
 }
-.card {
-  background: #fff;
+.card, .admin-card, section.card {
+  background: #ffffff;
   padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
 }
-.card h2 {
+.card:hover, .admin-card:hover, section.card:hover {
+  transform: translateY(-4px);
+}
+.card h2, .admin-card h2 {
   color: #2e7d32;
   margin-bottom: 1rem;
+  font-size: 1.4rem;
 }
-.card ul {
+.card ul, .admin-card ul {
   margin: 1rem 0;
   padding-left: 1.2rem;
 }
-.card li {
+.card ul li, .admin-card ul li {
   background: #f1f8e9;
   padding: 0.6rem;
   margin-bottom: 0.5rem;
   border-left: 4px solid #8bc34a;
   border-radius: 4px;
 }
-.card button {
+.card button, .admin-card button {
   background: #388e3c;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-top: 0.5rem;
   cursor: pointer;
 }
-.card button:hover {
+.card button:hover, .admin-card button:hover {
   background: #2e7d32;
 }
 
@@ -229,6 +234,70 @@ img {
   cursor: pointer;
 }
 
+/* Special: Professional Shop */
+.shop-banner {
+  text-align: center;
+  background: #c5e1a5;
+  padding: 2rem;
+  color: #1b5e20;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.shop-products {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.shop-products .product {
+  background: #f0f4c3;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #c5e1a5;
+}
+.shop-products .product h3 {
+  color: #33691e;
+}
+
+/* Special: Jobs Portal */
+.jobs-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.jobs-grid .job {
+  padding: 1rem;
+  border: 1px solid #dcedc8;
+  background: #f9fbe7;
+  border-left: 6px solid #7cb342;
+  border-radius: 8px;
+}
+.jobs-grid .job h4 {
+  color: #558b2f;
+  margin-bottom: 0.5rem;
+}
+
+/* Special: Cross-Border Trade */
+.border-status {
+  padding: 0.4rem 1rem;
+  background: #c8e6c9;
+  border-left: 6px solid #2e7d32;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.border-status h4 {
+  margin-bottom: 0.2rem;
+}
+
+/* Special: Bulk Buyer */
+.bulk-section {
+  background: #f1f8e9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.bulk-section h3 {
+  color: #33691e;
+}
+
 /* Footer */
 .footer {
   background: #2e7d32;
@@ -248,7 +317,7 @@ img {
   .hero h1 {
     font-size: 1.8rem;
   }
-  .portal-grid, .features .grid, .product-grid {
+  .portal-grid, .features .grid, .product-grid, .shop-products, .jobs-grid {
     grid-template-columns: 1fr;
   }
 }
