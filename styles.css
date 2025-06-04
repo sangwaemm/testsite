@@ -352,3 +352,16 @@ main {
 .footer {
   margin-top: auto;
 }
+.card p, .card ul {
+  margin-bottom: 1rem;
+}
+.card ul li {
+  margin: 0.4rem 0;
+}
+.card a {
+  color: #2e7d32;
+  font-weight: 500;
+}
+.card a:hover {
+  text-decoration: underline;
+}
