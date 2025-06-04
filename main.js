@@ -84,3 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll("button[onclick*='alert']");
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      console.log("Action triggered: " + btn.textContent);
+    });
+  });
+});
